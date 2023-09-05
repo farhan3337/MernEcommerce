@@ -1,0 +1,87 @@
+/* AdminOrders.css */
+
+/* Styling for the order cards */
+.order-card {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the order header */
+  .order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for the order status dropdown */
+  .order-status {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  
+  /* Styling for the order details */
+  .order-details {
+    flex-grow: 3;
+  }
+  
+  /* Styling for the product list */
+  .product-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Styling for each product item */
+  .product-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for the product image */
+  .product-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Styling for the product details */
+  .product-details {
+    flex-grow: 1;
+  }
+  
+  /* Media query for smaller screens (e.g., mobile devices) */
+  @media (max-width: 768px) {
+    /* Adjust styles for smaller screens here */
+    .order-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .order-status {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    .order-details {
+      width: 100%;
+    }
+    .product-list {
+      flex-direction: column;
+    }
+    .product-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .product-image {
+      width: 100%;
+      height: auto;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+  
